@@ -1,0 +1,28 @@
+<% include ./partials/header.ejs %>
+<!-- <div class="w-full h-screen flex bg-[url(https://images.unsplash.com/photo-1574169208507-84376144848b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D)] items-center justify-center"> -->
+
+  <div class="w-full h-screen flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGFic3RyYWN0fGVufDB8fDB8fHww'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+ 
+
+
+  <div class="w-96 h-[90vh] bg-gray-100 px-7 py-10 rounded-md">
+    <h1 class="text-3xl capitalize w-full text-center text-zinc-700 tracking-tight font-bold leading-none">Create new Account</h1>
+    <form action="/register" method="post">
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="username" placeholder="username">
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="text" name="fullname" placeholder="fullname">
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="email" name="email" placeholder="email">
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="password" name="password" placeholder="password">
+      <input class="border-2 rounded-md block mt-2 w-full px-3 py-2" type="number" name="contact" placeholder="contact">
+      <button class="border-2 rounded-md block mt-2 w-full px-3 py-2 bg-red-600 text-center text-white rounded-full" placeholder="Login">Login</button>
+
+
+    </form>
+        <p class="text-xs font-semibold text-zinc-700 mt-5 w-3/4 mx-auto text-center">By continuing, you agree to Pinterest's Terms of Service; Opens a new tab and acknowledge that you've read our Privacy Policy; Opens a new tab. Notice at collection; Opens a new tab.</p>
+<a href="/" class="inline-block  font-semibold text-zinc-700 w-full text-center mx-auto mt-5"> Already have an account ?</a>
+  </div>
+  
+ 
+</div>
+
+<% include ./partials/footer.ejs %>
